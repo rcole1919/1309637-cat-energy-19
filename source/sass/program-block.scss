@@ -1,0 +1,37 @@
+.program-block {
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 266px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f2f2f2;
+}
+
+.program-block__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.program-block__text {
+  @include arial;
+}
+
+.program-block__link {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-top: auto;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.program-block__link-text {
+  font-size: 16px;
+}
