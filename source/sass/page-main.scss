@@ -21,3 +21,33 @@
   text-align: center;
   color: white;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    background-image: none;
+  }
+
+  .page-main__title {
+    width: 528px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    background-image: url(../img/index-can-desktop@1x.png);
+    background-size: auto;
+    background-position: top right 328px;
+  }
+
+  .page-main__title {
+    box-sizing: border-box;
+    width: 1060px;
+    margin: 0 auto;
+    padding-right: 530px;;
+  }
+}

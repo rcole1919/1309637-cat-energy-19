@@ -8,6 +8,7 @@
 .advantages__title {
   margin: 0;
   padding: 0;
+  
   font-size: 36px;
   font-weight: 400;
   text-transform: none;
@@ -15,5 +16,144 @@
 }
 
 .advantages__item {
+  box-sizing: border-box;
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+  }
+  
+  &--healthy {
+    &::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
+  }
+  
+  &--flour {
+    &::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
+  }
+  
+  &--replaceable {
+    &::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
+  }
+  
+  &--fast {
+    &::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
+  }
+}
+
+.advantages__text {
   @include arial;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .advantages__title {
+    width: 708px;
+    margin-bottom: 70px;
+    font-size: 60px;
+  }  
+  
+  .advantages__item {
+    width: 235px;
+    min-height: 230px;
+    padding-left: 0;
+    padding-top: 110px;
+    margin-right: 88px;
+    margin-bottom: 88px;
+    align-items: stretch;
+    
+    &::before {
+      width: 80px;
+      height: 80px;
+      
+      background-position: 15px 15px;
+    }
+    
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      
+      font-family: "Oswald";
+      font-size: 281px;
+      line-height: 205px;
+      color: #f2f2f2;
+    }
+    
+    &--healthy {
+      &::after {
+        content: "1";
+      }
+    }
+
+    &--flour {
+      &::after {
+        content: "2";
+      }
+    }
+
+    &--replaceable {
+      &::after {
+        content: "3";
+      }
+    }
+
+    &--fast {
+      &::after {
+        content: "4";
+      }
+    } 
+  }
+  
+  .advantages__text {
+    z-index: 2;
+    @include arial-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1220px;
+    
+    &::after {
+      display: none;
+    }
+  }
+  
+  .advantages__title {
+    width: 1220px;
+  }
+  
+  .advantages__item {
+    margin-right: 0;
+  }
 }
