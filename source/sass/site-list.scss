@@ -16,10 +16,50 @@
   border-bottom: 1px solid #e7e7e7;
 
   text-align: center;
-
 }
 
 .site-list__link {
-
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  .site-list__item {
+    box-sizing: border-box;
+    margin-left: 36px;
+    min-height: 44px;
+    border: none;
+  }
+
+  .site-list__item--current {
+    border-bottom: 2px solid #68b738;
+    border-top: 2px solid transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .site-list__item--current {
+
+    border-bottom: 2px solid white;
+  }
+
+  .site-list__link {
+    color: white;
+  }
 }

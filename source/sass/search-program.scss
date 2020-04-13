@@ -22,9 +22,7 @@
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-
 }
-
 
 .search-program__link {
   background-color: #68b738;
@@ -32,4 +30,51 @@
   text-align: center;
   color: white;
   line-height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .search-program {
+    padding-top: 33px;
+    justify-content: flex-start;
+    width: 708px;
+    min-height: 684px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: center top 75px;
+  }
+
+  .search-program__title {
+    margin-left: 90px;
+    margin-bottom: 46px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: black;
+  }
+
+  .search-program__link {
+    width: 245px;
+    margin-left: 90px;
+
+    font-size: 20px;
+    line-height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search-program {
+    width: 1060px;
+    min-height: 460px;
+    margin: 0 auto;
+
+    background-image: none;
+  }
+
+  .search-program__title {
+    margin-left: 0;
+  }
+
+  .search-program__link {
+    margin-left: 0;
+  }
 }

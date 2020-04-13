@@ -1,5 +1,6 @@
 @import "visually-hidden.scss";
 @import "mixin.scss";
+@import "var.scss";
 @import "page-header.scss";
 @import "site-list.scss";
 @import "page-main.scss";
@@ -36,6 +37,14 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
 }
 
 img {
