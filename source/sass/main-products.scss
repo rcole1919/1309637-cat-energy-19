@@ -1,0 +1,19 @@
+.main-products {
+  margin-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-products {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-products {
+    width: 1220px;
+  }
+}

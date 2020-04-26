@@ -22,7 +22,7 @@
   height: 31px;
   margin-bottom: 22px;
   
-  background-image: url("../img/plus-mobile-svg.svg");
+  background-image: url("../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
   background-size: 31px auto;
 }
@@ -49,4 +49,63 @@
   
   font-size: 16px;
   line-height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .other {
+    width: 324px;
+    min-height: 432px;
+    margin-top: 82px;
+    margin-bottom: 58px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-top: 55px;
+    border: 1px solid #ededed;
+  }
+  
+  .other__plus {
+    width: 61px;
+    height: 61px;
+    margin-bottom: 50px;
+
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-size: 61px auto;
+  }
+  
+  .other__title {
+    width: 60%;
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .other__text {
+    width: 70%;
+    @include arial-tablet;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other {
+    width: 245px;
+    min-height: 432px;
+  }
+  
+  .other__title {
+    width: 100%;
+    margin-bottom: 23px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .other__text {
+    width: 100%;
+    @include arial-tablet;
+    line-height: 20px;
+  }
 }

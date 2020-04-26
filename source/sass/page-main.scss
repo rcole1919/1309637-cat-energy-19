@@ -37,6 +37,11 @@
     padding-top: 65px;
     background-image: none;
   }
+  
+  .page-main--other {
+    padding-top: 56px;
+    background-image: none;
+  }
 
   .page-main__title {
     width: 528px;
@@ -45,6 +50,14 @@
     line-height: 60px;
     text-align: left;
     color: black;
+  }
+  
+  .page-main__title--catalog {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    
+    text-align: left;
   }
 }
 
@@ -65,11 +78,24 @@
       background-position: top right 328px;
     }
   }
+  
+  .page-main--other {
+    padding-top: 46px;
+    background-image: none;
+  }
 
   .page-main__title {
     box-sizing: border-box;
     width: 1060px;
     margin: 0 auto;
     padding-right: 530px;;
+  }
+  
+  .page-main__title--catalog {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    
+    text-align: left;
   }
 }
