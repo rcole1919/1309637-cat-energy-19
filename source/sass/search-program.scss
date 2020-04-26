@@ -8,11 +8,17 @@
   justify-content: space-between;
   padding-top: 19px;
   padding-bottom: 22px;
-
+  
+  color: white;
+  
   background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  color: white;
+  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png");
+    background-size: 280px auto;
+  }
 }
 
 .search-program__title {
@@ -36,10 +42,15 @@
   .search-program {
     padding-top: 33px;
     justify-content: flex-start;
-    width: 708px;
+    width: 709px;
     min-height: 684px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: center top 75px;
+    
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 709px auto;
+    }
   }
 
   .search-program__title {

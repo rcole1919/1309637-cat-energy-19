@@ -11,6 +11,10 @@
 @import "result-stats.scss";
 @import "contacts.scss";
 @import "page-footer.scss";
+@import "body-index.scss";
+@import "product-item.scss";
+@import "other.scss";
+@import "extra.scss";
 
 // Oswald-Regular
 @font-face {
@@ -37,14 +41,6 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top right;
-  }
 }
 
 img {

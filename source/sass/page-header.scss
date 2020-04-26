@@ -2,16 +2,18 @@
   box-sizing: border-box;
   min-width: 320px;
   min-height: 65px;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .page-header__wrapper {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 11px;
   padding-bottom: 16.3px;
-  border-bottom: 1px solid #e7e7e7;
+  
 }
 
 .page-header__link {
@@ -27,20 +29,36 @@
   border: none;
   background-color: transparent;
   background-image: url("../img/mobile-menu-svg.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__toggle--close {
+  height: 19px;
+  background-image: url("../img/m-close-svg.svg");
+  background-position: center;
+  background-size: 19px 19px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 708px;
+    margin: 0 auto;
     padding-top: 24px;
     display: flex;
     justify-content: space-between;
+    border: none;
+  }
+  
+  .page-header__logo-image {
+    width: 174px;
+    height: auto;
   }
 
   .page-header__wrapper {
+    width: auto;
     padding: 0;
-    border-bottom: none;
+    margin: 0;
+    
   }
 
   .page-header__toggle {
@@ -50,9 +68,15 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: relative;
+    z-index: 2;
+    width: 1220px;
     min-height: 142px;
-    padding-left: 110px;
-    padding-right: 110px;
     padding-top: 53px;
+  }
+  
+  .page-header__logo-image {
+    width: 203px;
+    height: auto;
   }
 }
