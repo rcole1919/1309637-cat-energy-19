@@ -1,9 +1,14 @@
 .site-list {
+  display: none;
   margin: 0;
   padding: 0;
   font-size: 20px;
   font-weight: 500;
   list-style: none;
+}
+
+.site-list--show {
+  display: block;
 }
 
 .site-list__item {
@@ -13,7 +18,7 @@
   justify-content: center;
   align-items: center;
 
-  border-bottom: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
 
   text-align: center;
 }
@@ -54,12 +59,12 @@
     font-weight: 400;
   }
 
-  .site-list__item--current {
+  .site-list__item--index-current {
 
     border-bottom: 2px solid white;
   }
 
-  .site-list__link {
+  .site-list__link--index {
     color: white;
   }
 }
