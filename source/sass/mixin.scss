@@ -21,3 +21,19 @@
   text-transform: none;
   color: #444444;
 }
+
+@mixin oswald {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+@mixin oswald-tablet {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+}
