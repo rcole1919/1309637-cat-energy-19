@@ -1,20 +1,20 @@
 .search-program {
   box-sizing: border-box;
   width: 280px;
-  min-height: 401px;
+  min-height: 403px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 19px;
   padding-bottom: 22px;
-  
+
   color: white;
-  
+
   background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-can-mobile@2x.png");
     background-size: 280px auto;
@@ -36,17 +36,21 @@
   text-align: center;
   color: white;
   line-height: 40px;
+  
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .search-program {
-    padding-top: 33px;
+    padding-top: 40px;
     justify-content: flex-start;
     width: 709px;
-    min-height: 684px;
+    min-height: 688px;
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: center top 75px;
-    
+    background-position: center top 79px;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
       background-size: 709px auto;
@@ -55,12 +59,12 @@
 
   .search-program__title {
     margin-left: 90px;
-    margin-bottom: 46px;
+    margin-bottom: 47px;
 
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    color: black;
+    color: #111111;
   }
 
   .search-program__link {
@@ -75,14 +79,16 @@
 @media (min-width: $desktop-width) {
   .search-program {
     width: 1060px;
-    min-height: 460px;
+    min-height: 434px;
     margin: 0 auto;
+    padding-top: 42px;
 
     background-image: none;
   }
 
   .search-program__title {
     margin-left: 0;
+    margin-bottom: 52px;
   }
 
   .search-program__link {

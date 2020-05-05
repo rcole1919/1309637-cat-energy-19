@@ -8,7 +8,8 @@
 @import "program-block.scss";
 @import "advantages.scss";
 @import "example.scss";
-@import "result-stats.scss";
+@import "stats.scss";
+@import "result.scss";
 @import "contacts.scss";
 @import "page-footer.scss";
 @import "body-index.scss";
@@ -16,6 +17,7 @@
 @import "other.scss";
 @import "extra.scss";
 @import "main-products.scss";
+@import "form.scss";
 
 // Oswald-Regular
 @font-face {
@@ -42,6 +44,7 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
+  color: #111111;
 }
 
 img {
@@ -51,6 +54,6 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #111111;
 }
 

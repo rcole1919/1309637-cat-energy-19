@@ -4,7 +4,7 @@
   background-image: url(../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
@@ -28,16 +28,22 @@
 
 .page-main__title--catalog {
   margin-bottom: 40px;
+
+  color: #111111;
+}
+
+.page-main__title--form {
+  margin-bottom: 35px;
   
-  color: black;
+  color: #111111;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
-    padding-top: 65px;
+    padding-top: 58px;
     background-image: none;
   }
-  
+
   .page-main--other {
     padding-top: 56px;
     background-image: none;
@@ -49,14 +55,22 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    color: black;
+    color: #111111;
   }
-  
+
   .page-main__title--catalog {
     width: 708px;
     margin: 0 auto;
     margin-bottom: 83px;
-    
+
+    text-align: left;
+  }
+
+  .page-main__title--form {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+
     text-align: left;
   }
 }
@@ -65,20 +79,20 @@
   .page-main {
     z-index: 2;
     position: relative;
-    
-    padding-top: 85px;
+
+    padding-top: 80px;
     background-image: url(../img/index-can-desktop@1x.png);
     background-repeat: no-repeat;
     background-size: 552px auto;
     background-position: top right 328px;
-    
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-desktop@2x.png");
       background-size: 552px auto;
       background-position: top right 328px;
     }
   }
-  
+
   .page-main--other {
     padding-top: 46px;
     background-image: none;
@@ -90,12 +104,20 @@
     margin: 0 auto;
     padding-right: 530px;;
   }
-  
+
   .page-main__title--catalog {
     width: 1220px;
     margin: 0 auto;
     margin-bottom: 83px;
-    
+
+    text-align: left;
+  }
+
+  .page-main__title--form {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+
     text-align: left;
   }
 }
