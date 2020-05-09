@@ -55,10 +55,12 @@
   }
 
   &:active {
+    padding-left: 15px;
     border: 2px solid #444444;
   }
 
   &:invalid {
+    padding-left: 15px;
     border: 2px solid #ff8282;
   }
 }
@@ -131,6 +133,11 @@
   &:active + .form__label--radio::after,
   &:active + .form__label--radio {
     opacity: 0.3;
+  }
+  
+  &:focus + .form__label--radio::before,
+  &:focus:checked + .form__label--radio::before {
+    outline: 2px solid #A6C7FF;
   }
 }
 
@@ -230,6 +237,7 @@
   }
 
   &:active {
+    padding: 12px;
     border: 2px solid #444444;
   }
 }
@@ -283,6 +291,11 @@
   &:active + .form__label--checkbox::before,
   &:active + .form__label--checkbox {
     opacity: 0.3;
+  }
+  
+  &:focus + .form__label--checkbox::before,
+  &:focus:checked + .form__label--checkbox::before {
+    outline: 2px solid #A6C7FF;
   }
 }
 
@@ -342,6 +355,14 @@
 
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+    
+    &:active {
+      padding-left: 19px;
+    }
+
+    &:invalid {
+      padding-left: 19px;
     }
   }
 
@@ -433,6 +454,11 @@
 
     font-size: 20px;
     line-height: 30px;
+    
+    &:active {
+      padding-left: 18px;
+      padding-top: 9px;
+    }
   }
 
   .form__title-wrapper--extra {
