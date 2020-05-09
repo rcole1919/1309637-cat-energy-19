@@ -2,11 +2,24 @@
   .body-index {
     position: relative;
     
-    &::before {
+    &::after {
       content: "";
 
       position: absolute;
       z-index: 1;
+      top: 0;
+      right: 0;
+      
+      width: 50%;
+      padding-top: 45%;
+      background-color: #68b738;
+    }
+    
+    &::before {
+      content: "";
+
+      position: absolute;
+      z-index: 2;
       top: 0;
       right: 0;
       
@@ -17,7 +30,6 @@
       background-repeat: no-repeat;
       background-position: top right;
       background-size: 100%;
-
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
