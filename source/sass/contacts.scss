@@ -45,13 +45,14 @@
 }
 
 .contacts__iframe {
+  width: 100%;
   border: none;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__info {
     width: 628px;
-    min-height: 201px;
+    height: 201px;
     margin: 0 auto;
   }
   
@@ -63,7 +64,7 @@
   
   .contacts__text--arial {
     width: 160px;
-    min-height: 78px;
+    height: 78px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,6 +115,7 @@
     top: 95px;
     left: 110px;
     
+    align-items: center;
     justify-content: flex-start;
     width: 570px;
     min-height: 201px;

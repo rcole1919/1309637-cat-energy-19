@@ -1,7 +1,7 @@
 .search-program {
   box-sizing: border-box;
   width: 280px;
-  min-height: 403px;
+  height: 403px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@
     padding-top: 40px;
     justify-content: flex-start;
     width: 709px;
-    min-height: 688px;
+    height: 688px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: center top 79px;
 
@@ -79,7 +79,7 @@
 @media (min-width: $desktop-width) {
   .search-program {
     width: 1060px;
-    min-height: 434px;
+    height: 434px;
     margin: 0 auto;
     padding-top: 42px;
 
