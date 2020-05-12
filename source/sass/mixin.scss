@@ -1,5 +1,5 @@
 @mixin arial {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -7,7 +7,7 @@
 }
 
 @mixin arial-before {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-transform: none;
@@ -15,7 +15,7 @@
 }
 
 @mixin arial-tablet {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-transform: none;
@@ -23,7 +23,7 @@
 }
 
 @mixin oswald {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -31,7 +31,7 @@
 }
 
 @mixin oswald-tablet {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;

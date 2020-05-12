@@ -21,6 +21,7 @@
 
 .example__text {
   margin-bottom: 25px;
+
   @include arial;
 }
 
@@ -70,6 +71,7 @@
     z-index: 2;
     margin-bottom: 53px;
     padding-right: 10px;
+
     @include arial-tablet;
   }
 }
@@ -79,24 +81,24 @@
     padding: 0;
     border: none;
   }
-  
+
   .example__wrapper {
     width: 1220px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .example__block {
     margin: 0;
     padding-top: 56px;
     width: 445px;
   }
-  
+
   .example__title {
     margin-bottom: 146px;
   }
-  
+
   .example__text {
     margin-bottom: 68px;
   }

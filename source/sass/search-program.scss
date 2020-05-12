@@ -15,7 +15,8 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/index-can-mobile@2x.png");
     background-size: 280px auto;
   }
@@ -36,8 +37,14 @@
   text-align: center;
   color: white;
   line-height: 40px;
-  
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
   &:active {
+    background-color: #5eaa2f;
+
     color: rgba(255, 255, 255, 0.3);
   }
 }
@@ -51,7 +58,8 @@
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: center top 79px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
       background-size: 709px auto;
     }

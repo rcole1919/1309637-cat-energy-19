@@ -4,7 +4,7 @@
 
 .program-block__item {
   position: relative;
-  
+
   box-sizing: border-box;
   width: 280px;
   min-height: 266px;
@@ -80,9 +80,14 @@
 .program-block__link {
   display: flex;
   flex-direction: row;
+  align-self: flex-start;
   padding-top: 15px;
 
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .program-block__link-text {
@@ -99,10 +104,11 @@
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  
-  &:active {
-    opacity: 0.3;
-  }
+}
+
+.program-block__link:hover .program-block__link-text::after {
+  width: 34px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -190,16 +196,16 @@
     padding-top: 76px;
     padding-bottom: 56px;
     justify-content: flex-start;
-    
+
     &:nth-child(2n) {
       margin-right: auto;
     }
-    
+
 
     &:not(:last-child) {
       margin-bottom: 80px;
     }
-    
+
     &:nth-last-child(2) {
       margin-bottom: 0;
     }
@@ -237,6 +243,7 @@
 
   .program-block__text {
     margin-bottom: auto;
+
     @include arial-tablet;
   }
 

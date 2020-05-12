@@ -1,7 +1,7 @@
 @media (min-width: $desktop-width) {
   .body-index {
     position: relative;
-    
+
     &::after {
       content: "";
 
@@ -9,12 +9,12 @@
       z-index: 1;
       top: 0;
       right: 0;
-      
+
       width: 50%;
       padding-top: 45%;
       background-color: #68b738;
     }
-    
+
     &::before {
       content: "";
 
@@ -22,16 +22,17 @@
       z-index: 2;
       top: 0;
       right: 0;
-      
+
       width: 50%;
       padding-top: 100%;
-      
+
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: top right;
       background-size: 100%;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }

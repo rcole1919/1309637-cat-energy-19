@@ -1,5 +1,5 @@
 .site-list {
-  display: none;
+  display: block;
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -7,8 +7,8 @@
   list-style: none;
 }
 
-.site-list--show {
-  display: block;
+.site-list--close {
+  display: none;
 }
 
 .site-list__item {
@@ -25,11 +25,11 @@
 
 .site-list__link {
   line-height: 20px;
-  
+
   &:hover {
     opacity: 0.6;
   }
-  
+
   &:active {
     opacity: 0.3;
   }

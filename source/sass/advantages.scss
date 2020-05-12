@@ -45,24 +45,48 @@
   &--healthy {
     &::before {
       background-image: url("../img/advantage-leaf@1x.png");
+
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-leaf@2x.png");
+        background-size: 50px auto;
+      }
     }
   }
 
   &--flour {
     &::before {
       background-image: url("../img/advantage-powder@1x.png");
+
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-powder@2x.png");
+        background-size: 50px auto;
+      }
     }
   }
 
   &--replaceable {
     &::before {
       background-image: url("../img/advantage-dining@1x.png");
+
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png");
+        background-size: 50px auto;
+      }
     }
   }
 
   &--fast {
     &::before {
       background-image: url("../img/advantage-clock@1x.png");
+
+      @media (min-resolution: $retina-dpi),
+        (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+        background-size: 50px auto;
+      }
     }
   }
 }
@@ -115,7 +139,7 @@
       right: 0;
       z-index: 1;
 
-      font-family: "Oswald";
+      font-family: "Oswald", sans-serif;
       font-size: 281px;
       line-height: 205px;
       color: #f2f2f2;
@@ -148,6 +172,7 @@
 
   .advantages__text {
     z-index: 2;
+
     @include arial-tablet;
   }
 }
