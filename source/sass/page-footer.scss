@@ -1,6 +1,6 @@
 .page-footer {
   min-width: 320px;
-  height: 150px;
+  height: 236px;
 
   background-color: #f2f2f2;
 }
@@ -105,6 +105,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    height: 150px;
     display: flex;
     align-items: center;
   }
